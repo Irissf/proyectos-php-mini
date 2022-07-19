@@ -1,0 +1,10 @@
+{
+    "name": "irisphp/notas",
+    "authors": [
+        {
+            "name": "Irissf",
+            "email": "iris.seijo@gmail.com"
+        }
+    ],
+    "require": {}
+}

@@ -1,6 +1,6 @@
 <?php
 
-namespace irisphp/notas/lib;
+namespace irisphp\notas\lib;
 use PDO;
 use PDOException;
 
@@ -29,9 +29,9 @@ class Database{
                 pdo::ATTR_EMULATE_PREPARES => false
             ];
             $pdo = new PDO($connection,$this->user,$this->password,$options );
-            
-        } catch (\Throwable $th) {
-            //throw $th;
+            return $pdo;
+        } catch (PDOException $th) {
+            throw $th;
         }
     }
 }
